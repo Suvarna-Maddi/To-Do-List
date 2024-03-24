@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="td.css">
+    <title>To-Do List</title>
+
+</head>
+<body>
+    <div class="leaves leaf1"></div>
+    <div class="leaves leaf2"></div>
+    <div class="leaves leaf3"></div>
+    <div class="leaves leaf4"></div>
+    <div class="leaves leaf5"></div>
+  
+    <h2 style="color: #070707;">To-Do List</h2>
+    
+    <form id="todoForm">
+        <input type="text" id="taskInput" placeholder="Enter your thoughts" required="">
+        <button type="button" id="add" onclick="addTask()">Proceed</button>
+    </form>
+
+    <ul id="taskList"></ul>
+    
+    <!-- Button to toggle history visibility -->
+    <button id="historyButton" onclick="toggleHistory()">Show History</button>
+    
+    <!-- History bar -->
+    <div id="taskHistory" class="history">
+        <h2>Task History</h2>
+        <ul id="historyList"></ul>
+    </div>
+      
+    
+    <script src="to1.js"></script>
+</body>
+</html>

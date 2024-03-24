@@ -1,0 +1,183 @@
+body {
+    background-image: url('https://img.freepik.com/premium-photo/list-icon-notebook-with-completed-todo-list-3d-render_471402-428.jpg');
+    /* Specify the path to your image */
+    width: 99%; /* Set width to fill the entire viewport */
+    height: 100%; /* Set height to fill the entire viewport */
+    background-size: cover; /* Cover the entire background without distortion */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background from repeating */
+    background-attachment: fixed; /* Fix the background image in place */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background-color: #f5f5f5;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+      background-image: url('https://img.freepik.com/premium-photo/list-icon-notebook-with-completed-todo-list-3d-render_471402-428.jpg');
+  }
+}
+
+h2{
+    text-align: center;
+}
+button.hover{
+  background-color: rgb(18, 114, 18);
+}
+button{
+  padding: 8px 15px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+}
+#add{
+  background-color: green;
+}
+#todoForm {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  filter: drop-shadow(8px 2px 3px black);
+}
+
+/* Styles for the history bar */
+#taskHistory {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%; /* Adjust width as needed */
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    cursor: move;
+    display: none; /* Initially hidden */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add glow effect */
+}
+/* Styles for the history button */
+#historyButton {
+position: center;
+bottom: 20px; /* Adjust distance from bottom as needed */
+left: 60%;
+transform: translateX(-50%);
+padding: 10px 20px;
+background-color: #fff;
+color: #333;
+border: 2px solid #333;
+border-radius: 20px;
+font-weight: bold;
+cursor: pointer;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add glow effect */
+}
+
+
+/* Styles for the history button */
+
+
+form {
+  display: block;
+  margin-top: 0em;
+}
+#taskInput {
+  width: 250px;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+#del{
+  color: red;
+}
+#tasklist{
+  color: red;
+}
+
+li {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  border-left: 4px solid #4caf50;
+}
+user agent stylesheet
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+user agent stylesheet
+ul {
+  list-style-type: disc;
+}
+.deleteButton {
+  background-color: #f44336;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.deleteButton:hover {
+  background-color: #ff3333;
+  transform: scale(1.1);
+}
+
+/* Shining animation */
+@keyframes shining {
+  0% { background-color: #ff5c5c; }
+  50% { background-color: #ff3333; }
+  100% { background-color: #ff5c5c; }
+}
+
+.shining {
+  animation: shining 1s infinite;
+}
+.history {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  display: none;
+}
+
+.history.show {
+  display: block;
+  cursor: grab;
+}
+
+.history h2 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 18px;
+}
+
+.history ul {
+  padding: 0;
+}
+
+.history ul li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+
